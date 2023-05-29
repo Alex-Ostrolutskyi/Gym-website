@@ -1,0 +1,50 @@
+.values__container {
+    display: grid;
+    grid-template-columns: 35% 55%;
+    gap: 10%;
+}
+
+.values__right  p {
+    margin: 2.5rem 0;
+}
+
+.values__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem 3rem;
+}
+
+.card.values__value {
+    position: relative;
+    padding-top: 3rem;
+}
+
+.card.values__value span {
+    position: absolute;
+    top: -1.5rem;
+    left: 1rem;
+}
+
+.values__value h3 {
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 64rem) {
+    .values__container {
+        grid-template-columns: 1fr;
+        gap: 5rem;
+    }
+    .values__left {
+        display: none;
+    }
+    .values__wrapper {
+        gap: 3rem;
+    }
+}
+
+
+@media screen and (max-width: 40rem) {
+    .values__wrapper {
+        grid-template-columns: 1fr;
+    }
+}

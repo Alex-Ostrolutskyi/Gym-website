@@ -1,0 +1,38 @@
+.faqs__wrapper {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem 5rem;
+    align-items:flex-start;
+}
+.faq {
+    border: 2px solid white;
+    border-radius: 3rem 0 3rem 0;
+    padding: 2rem;
+    cursor: pointer;
+}
+
+.faq > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq__icon {
+    background: transparent;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.faq__answer {
+    margin-top: 1.5rem;
+    transition: var(--transition);
+}
+
+
+@media screen and (max-width: 64rem) {
+    .faqs__wrapper {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}

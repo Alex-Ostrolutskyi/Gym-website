@@ -1,0 +1,68 @@
+.trainers__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+}
+
+.card.trainer {
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.trainer__image {
+    height: 80%;
+}
+.trainer__image img {
+    height: 100%;
+}
+.trainer h3 {
+    margin: 1rem auto;
+}
+
+.trainer p {
+    margin-bottom: 1rem;
+}
+
+.trainer__socials {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.trainer__socials a {
+    font-size: 1.5rem;
+    background-color: var(--color-primary-600);
+    padding: 0.8rem;
+    border-radius: 25%;
+    transition: var(--transition);
+}
+
+.trainer__socials a svg {
+    display: block;
+    margin: 0 auto;
+}
+
+.trainer__socials a{
+    background-color: rgb(1, 1, 60);
+}
+
+@media screen and (max-width: 40rem) {
+    .trainers__container {
+        grid-template-columns: 1fr;
+    }
+    .card.trainer {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .trainers {
+        margin-top: 5rem;
+    }
+    .trainer__socials a {
+        padding: 0.5rem ;
+    }
+    
+    
+}
+

@@ -1,0 +1,59 @@
+.plans__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+.card {
+    padding: 1.5rem;
+}
+.card h3 {
+    margin-bottom: 1rem;
+}
+
+.card h2 {
+    margin: 1rem auto;
+}
+.card li {
+    margin-bottom: 0.5rem;
+}
+.disabled {
+    opacity: 0.5;
+}
+
+.card li:last-child {
+    margin-bottom: 1rem;
+}
+.card button {
+    width: 75%;
+}
+
+@media screen and (max-width: 64rem) {
+    .plans__wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+    .plans__wrapper article.card.plan__Gold {
+        margin-left: 2rem;
+        margin-right: -2rem;
+    }
+    .plan__Platinum {
+        grid-column-start: 1 ;
+        grid-column-end: span-1;
+    }
+}
+@media screen and (max-width: 40rem) {
+    .plans__wrapper {
+        grid-template-columns: 1fr;
+    }
+    .plans__wrapper article.card.plan__Gold {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .plan__Platinum {
+         grid-column-start: 1;
+        grid-column-end: 1;
+    }
+}
+
+

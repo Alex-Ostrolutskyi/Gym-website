@@ -1,0 +1,38 @@
+.container__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+}
+
+.container__wrapper a {
+    background-color: var(--color-primary-600);
+    width: 8rem;
+    height: 8rem;
+    border-radius: 25%;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+}
+
+.container__wrapper a svg {
+    font-size: 4rem;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.container__wrapper a:hover {
+    background-color: var(--color-secondary);
+}
+
+@media screen and (max-width: 40rem) {
+    .container__wrapper {
+        grid-template-columns: none;
+        gap: 2.5rem;
+    }
+    .contact {
+        margin-top: 5rem;
+    }
+}
+
+
